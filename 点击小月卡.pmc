@@ -1,0 +1,14 @@
+﻿[PMC Globals]|None||
+[PMC Code v5.4.1]|F3||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Context=None|
+Groups=Start:1
+1|[LoopStart]|LoopStart|0|0|Loop|||||1|
+2|WinActivate||1|333|WinActivate||原神 ahk_class UnityWndClass|||3|
+3|[Pause]||1|15|Sleep|||||5|
+4|Continue, Continue, FoundX, FoundY, 0|0, 0, 2560, 1440, C:\Program Files\MacroCreator\Screenshots\Screen_20230228223504.png|10|20|ImageSearch||Window|||6|
+5|If Image/Pixel Found||1|0|If_Statement|||||12|
+6|Left Click, Continue, FoundX, FoundY, 1|0, 0, 2560, 1440, C:\Program Files\MacroCreator\Screenshots\Screen_20230228223504.png|10|20|ImageSearch||Window|||14|
+7|Left Click|Left, 5, |1|10|Click|||||23|
+8|[End If]|EndIf|1|0|If_Statement|||||25|
+9|[LoopEnd]|LoopEnd|1|0|Loop|||||26|
+
